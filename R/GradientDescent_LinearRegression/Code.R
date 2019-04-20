@@ -75,14 +75,7 @@ gradient_Descent <- function(x, y, learning_rate, converge_threshold,m_start,c_s
     
     MSE_new <- sum((y - yhat) ^ 2)/length(x)
     
-    print(paste0(iterator,"_",diff))
-    
-    
-    # if(runif(1)<0.5){
-    #   ggplot(mtcars,aes(x=disp,y=mpg))+geom_point()+geom_point(aes(x=disp,y=yhat),color="red")
-    # }
-    # Sys.sleep(0.25)
-    
+    print(paste0("Iterator : ",iterator,"_diff mse : ",diff))
     
     if(diff<converge_threshold) {
       #iterator>max_iter 
