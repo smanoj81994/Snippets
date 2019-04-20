@@ -79,10 +79,5 @@ server<-shinyServer(function(input, output, session) {
     
   })
 
+# Run the app
 shinyApp(ui,server)
-  
-# Long story short : not recomended if you want to 
-# load something in the backend as shiny anyways 
-# stops the ui until the promise return with result
-  
-  
